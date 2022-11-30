@@ -32,7 +32,7 @@ function moveDodgerRight(){
     const rightNumber = dodger.style.left.replace("px", "");
     const right =parseInt(rightNumber, 10);
 
-    if (right > 0) {
+    if (right < 360) {
 
         dodger.style.left = `${right +1}px`;
     }
